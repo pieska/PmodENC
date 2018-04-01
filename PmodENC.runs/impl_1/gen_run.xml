@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1500838068">
+  <File Type="ROUTE-ERROR-DCP" Name="PmodENC_routed_error.dcp"/>
+  <File Type="ROUTE-DRC" Name="PmodENC_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="PmodENC_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="PmodENC_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="PmodENC_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="PmodENC_drc_routed.rpx"/>
+  <File Type="ROUTE-PWR" Name="PmodENC_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="PmodENC_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="PmodENC_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="PmodENC_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="PmodENC_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="PmodENC_route_status.pb"/>
+  <File Type="BITSTR-BMM" Name="PmodENC_bd.bmm"/>
+  <File Type="BITSTR-SYSDEF" Name="PmodENC.sysdef"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="PmodENC_timing_summary_routed.rpt"/>
+  <File Type="BG-BGN" Name="PmodENC.bgn"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BITSTR-MMI" Name="PmodENC.mmi"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="PmodENC_routed_bb.dcp"/>
+  <File Type="BG-DRC" Name="PmodENC.drc"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="PmodENC_postroute_physopt_bb.dcp"/>
+  <File Type="ROUTE-CLK" Name="PmodENC_clock_utilization_routed.rpt"/>
+  <File Type="PLACE-IO" Name="PmodENC_io_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="PmodENC_utilization_placed.pb"/>
+  <File Type="PWROPT-DCP" Name="PmodENC_pwropt.dcp"/>
+  <File Type="PLACE-UTIL" Name="PmodENC_utilization_placed.rpt"/>
+  <File Type="OPT-HWDEF" Name="PmodENC.hwdef"/>
+  <File Type="OPT-DRC" Name="PmodENC_drc_opted.rpt"/>
+  <File Type="PLACE-DCP" Name="PmodENC_placed.dcp"/>
+  <File Type="PA-TCL" Name="PmodENC.tcl"/>
+  <File Type="ROUTE-TIMING-PB" Name="PmodENC_timing_summary_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="PmodENC.msk"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="PmodENC_postplace_pwropt.dcp"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="PmodENC_incremental_reuse_pre_placed.rpt"/>
+  <File Type="OPT-DCP" Name="PmodENC_opt.dcp"/>
+  <File Type="PLACE-CTRL" Name="PmodENC_control_sets_placed.rpt"/>
+  <File Type="RDI-RDI" Name="PmodENC.vdi"/>
+  <File Type="PHYSOPT-DCP" Name="PmodENC_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="PmodENC_postroute_physopt.dcp"/>
+  <File Type="BG-BIT" Name="PmodENC.bit"/>
+  <File Type="ROUTE-DCP" Name="PmodENC_routed.dcp"/>
+  <File Type="BG-BIN" Name="PmodENC.bin"/>
+  <File Type="ROUTE-TIMING-RPX" Name="PmodENC_timing_summary_routed.rpx"/>
+  <File Type="BITSTR-RBT" Name="PmodENC.rbt"/>
+  <File Type="BITSTR-NKY" Name="PmodENC.nky"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../FPGAs_fuer_Maker/debounce/debounce.srcs/sources_1/new/debounce.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/rotaryencoder.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PmodENC.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="PmodENC"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

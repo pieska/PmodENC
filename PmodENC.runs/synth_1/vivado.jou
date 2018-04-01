@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sun Jul 23 21:27:49 2017
+# Process ID: 3217
+# Current directory: /home/pharaoh/Projekte/FPGA/Xilinx/PmodENC/PmodENC.runs/synth_1
+# Command line: vivado -log PmodENC.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PmodENC.tcl
+# Log file: /home/pharaoh/Projekte/FPGA/Xilinx/PmodENC/PmodENC.runs/synth_1/PmodENC.vds
+# Journal file: /home/pharaoh/Projekte/FPGA/Xilinx/PmodENC/PmodENC.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source PmodENC.tcl -notrace

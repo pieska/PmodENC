@@ -1,0 +1,313 @@
+
+*** Running vivado
+    with args -log PmodENC.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source PmodENC.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source PmodENC.tcl -notrace
+Command: synth_design -top PmodENC -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020-clg484'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020-clg484'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3226 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1238.379 ; gain = 41.992 ; free physical = 3223 ; free virtual = 21318
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'PmodENC' [/home/pharaoh/Projekte/FPGA/Xilinx/PmodENC/PmodENC.srcs/sources_1/new/PmodENC.vhd:44]
+	Parameter cntr_size bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'debounce' declared at '/home/pharaoh/Projekte/FPGA/FPGAs_fuer_Maker/debounce/debounce.srcs/sources_1/new/debounce.vhd:34' bound to instance 'debounce_a' of component 'debounce' [/home/pharaoh/Projekte/FPGA/Xilinx/PmodENC/PmodENC.srcs/sources_1/new/PmodENC.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'debounce' [/home/pharaoh/Projekte/FPGA/FPGAs_fuer_Maker/debounce/debounce.srcs/sources_1/new/debounce.vhd:44]
+	Parameter num_cons_cycles bound to: 2000 - type: integer 
+	Parameter cntr_size bound to: 11 - type: integer 
+WARNING: [Synth 8-614] signal 'deb_reg' is read in the process but is not in the sensitivity list [/home/pharaoh/Projekte/FPGA/FPGAs_fuer_Maker/debounce/debounce.srcs/sources_1/new/debounce.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (1#1) [/home/pharaoh/Projekte/FPGA/FPGAs_fuer_Maker/debounce/debounce.srcs/sources_1/new/debounce.vhd:44]
+	Parameter cntr_size bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'debounce' declared at '/home/pharaoh/Projekte/FPGA/FPGAs_fuer_Maker/debounce/debounce.srcs/sources_1/new/debounce.vhd:34' bound to instance 'debounce_b' of component 'debounce' [/home/pharaoh/Projekte/FPGA/Xilinx/PmodENC/PmodENC.srcs/sources_1/new/PmodENC.vhd:90]
+	Parameter cntr_size bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'debounce' declared at '/home/pharaoh/Projekte/FPGA/FPGAs_fuer_Maker/debounce/debounce.srcs/sources_1/new/debounce.vhd:34' bound to instance 'debounce_btn' of component 'debounce' [/home/pharaoh/Projekte/FPGA/Xilinx/PmodENC/PmodENC.srcs/sources_1/new/PmodENC.vhd:98]
+	Parameter cntr_size bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'debounce' declared at '/home/pharaoh/Projekte/FPGA/FPGAs_fuer_Maker/debounce/debounce.srcs/sources_1/new/debounce.vhd:34' bound to instance 'debounce_swt' of component 'debounce' [/home/pharaoh/Projekte/FPGA/Xilinx/PmodENC/PmodENC.srcs/sources_1/new/PmodENC.vhd:106]
+INFO: [Synth 8-3491] module 'rotaryencoder' declared at '/home/pharaoh/Projekte/FPGA/Xilinx/PmodENC/PmodENC.srcs/sources_1/new/rotaryencoder.vhd:34' bound to instance 'rotenc' of component 'rotaryencoder' [/home/pharaoh/Projekte/FPGA/Xilinx/PmodENC/PmodENC.srcs/sources_1/new/PmodENC.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'rotaryencoder' [/home/pharaoh/Projekte/FPGA/Xilinx/PmodENC/PmodENC.srcs/sources_1/new/rotaryencoder.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'rotaryencoder' (2#1) [/home/pharaoh/Projekte/FPGA/Xilinx/PmodENC/PmodENC.srcs/sources_1/new/rotaryencoder.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'PmodENC' (3#1) [/home/pharaoh/Projekte/FPGA/Xilinx/PmodENC/PmodENC.srcs/sources_1/new/PmodENC.vhd:44]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1279.879 ; gain = 83.492 ; free physical = 3234 ; free virtual = 21329
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1279.879 ; gain = 83.492 ; free physical = 3234 ; free virtual = 21329
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1287.883 ; gain = 91.496 ; free physical = 3234 ; free virtual = 21329
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "cntr_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "deb_next" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element cntr_reg_reg was removed.  [/home/pharaoh/Projekte/FPGA/FPGAs_fuer_Maker/debounce/debounce.srcs/sources_1/new/debounce.vhd:61]
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-802] inferred FSM for state register 'enc_state_reg_reg' in module 'rotaryencoder'
+WARNING: [Synth 8-6014] Unused sequential element enc_state_reg_reg was removed.  [/home/pharaoh/Projekte/FPGA/Xilinx/PmodENC/PmodENC.srcs/sources_1/new/rotaryencoder.vhd:65]
+INFO: [Synth 8-5544] ROM "enc_state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element enc_state_reg_reg was removed.  [/home/pharaoh/Projekte/FPGA/Xilinx/PmodENC/PmodENC.srcs/sources_1/new/rotaryencoder.vhd:65]
+WARNING: [Synth 8-6014] Unused sequential element enc_state_reg_reg was removed.  [/home/pharaoh/Projekte/FPGA/Xilinx/PmodENC/PmodENC.srcs/sources_1/new/rotaryencoder.vhd:65]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 unknown |                              000 |                              000
+                    idle |                              001 |                              001
+             start_right |                              010 |                              010
+            middle_right |                              011 |                              100
+               end_right |                              100 |                              110
+              start_left |                              101 |                              011
+             middle_left |                              110 |                              101
+                end_left |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'enc_state_reg_reg' using encoding 'sequential' in module 'rotaryencoder'
+WARNING: [Synth 8-6014] Unused sequential element enc_state_reg_reg was removed.  [/home/pharaoh/Projekte/FPGA/Xilinx/PmodENC/PmodENC.srcs/sources_1/new/rotaryencoder.vhd:65]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1303.898 ; gain = 107.512 ; free physical = 3223 ; free virtual = 21318
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 4     
++---Registers : 
+	               11 Bit    Registers := 4     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	  15 Input      3 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 15    
+	   8 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module debounce 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module rotaryencoder 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  15 Input      3 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   8 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "debounce_a/cntr_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "debounce_a/deb_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "debounce_b/cntr_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "debounce_b/deb_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "debounce_btn/cntr_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "debounce_btn/deb_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "debounce_swt/cntr_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "debounce_swt/deb_next" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element debounce_a/cntr_reg_reg was removed.  [/home/pharaoh/Projekte/FPGA/FPGAs_fuer_Maker/debounce/debounce.srcs/sources_1/new/debounce.vhd:61]
+WARNING: [Synth 8-6014] Unused sequential element debounce_b/cntr_reg_reg was removed.  [/home/pharaoh/Projekte/FPGA/FPGAs_fuer_Maker/debounce/debounce.srcs/sources_1/new/debounce.vhd:61]
+WARNING: [Synth 8-6014] Unused sequential element debounce_btn/cntr_reg_reg was removed.  [/home/pharaoh/Projekte/FPGA/FPGAs_fuer_Maker/debounce/debounce.srcs/sources_1/new/debounce.vhd:61]
+WARNING: [Synth 8-6014] Unused sequential element debounce_swt/cntr_reg_reg was removed.  [/home/pharaoh/Projekte/FPGA/FPGAs_fuer_Maker/debounce/debounce.srcs/sources_1/new/debounce.vhd:61]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1426.648 ; gain = 230.262 ; free physical = 3072 ; free virtual = 21161
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1426.648 ; gain = 230.262 ; free physical = 3072 ; free virtual = 21161
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1426.648 ; gain = 230.262 ; free physical = 3071 ; free virtual = 21160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1426.648 ; gain = 230.262 ; free physical = 3071 ; free virtual = 21160
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1426.648 ; gain = 230.262 ; free physical = 3071 ; free virtual = 21160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1426.648 ; gain = 230.262 ; free physical = 3071 ; free virtual = 21160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1426.648 ; gain = 230.262 ; free physical = 3071 ; free virtual = 21160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1426.648 ; gain = 230.262 ; free physical = 3071 ; free virtual = 21160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1426.648 ; gain = 230.262 ; free physical = 3071 ; free virtual = 21160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     4|
+|3     |LUT2 |    12|
+|4     |LUT3 |    12|
+|5     |LUT4 |    12|
+|6     |LUT5 |    18|
+|7     |LUT6 |    19|
+|8     |FDRE |    67|
+|9     |IBUF |     5|
+|10    |OBUF |     4|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------------+--------------+------+
+|      |Instance       |Module        |Cells |
++------+---------------+--------------+------+
+|1     |top            |              |   154|
+|2     |  debounce_a   |debounce      |    33|
+|3     |  debounce_b   |debounce_0    |    33|
+|4     |  debounce_btn |debounce_1    |    33|
+|5     |  debounce_swt |debounce_2    |    33|
+|6     |  rotenc       |rotaryencoder |    12|
++------+---------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1426.648 ; gain = 230.262 ; free physical = 3071 ; free virtual = 21160
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1426.648 ; gain = 230.262 ; free physical = 3073 ; free virtual = 21162
+Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1426.656 ; gain = 230.262 ; free physical = 3073 ; free virtual = 21162
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+38 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1529.660 ; gain = 345.863 ; free physical = 3014 ; free virtual = 21104
+INFO: [Common 17-1381] The checkpoint '/home/pharaoh/Projekte/FPGA/Xilinx/PmodENC/PmodENC.runs/synth_1/PmodENC.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1553.672 ; gain = 0.000 ; free physical = 3016 ; free virtual = 21106
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 23 21:28:06 2017...
